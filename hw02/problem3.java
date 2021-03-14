@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class problem3{
 
-    public static void main(String arg[]){
+    public static void main(String[] arg){
 
         Scanner Kb = new Scanner(System.in);
 
@@ -20,7 +20,8 @@ public class problem3{
         System.out.println("Please enter the acceleration of the object : ");
         acceleration = Kb.nextDouble();
 
-        coe = force / ((mass*9.8) + (mass*acceleration));
+//        coe = force / ((mass*9.8) + (mass*acceleration));
+        coe = (force - mass*acceleration) / (mass*9.8);
 
         System.out.println("The coeffiecent of friction is "+ coe);
 
