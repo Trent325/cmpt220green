@@ -1,11 +1,10 @@
 import java.util.*;
 
 public class Problem2 {
-    
-    
-    public static void main(String arg[]){
 
-        Scanner Kb = new Scanner(System.in);
+    public static void main(String arg[]) {
+
+        Scanner Kb = new Scanner(System.in); // JA: Should be lowercase
 
         System.out.println("Enter the coordinates for two points in order followed by spaces: ");
         double x1 = Kb.nextDouble();
@@ -13,19 +12,13 @@ public class Problem2 {
         double x2 = Kb.nextDouble();
         double y2 = Kb.nextDouble();
 
-        
         double slope, intercept;
-	    slope = y2 - y1 / x2 - x1;
-	    intercept = y1 - x1 * slope;
+        slope = (y2 - y1) / (x2 - x1); // JA: Be careful with the precedence
+        intercept = y1 - x1 * slope;
 
-        System.out.println("the line equation for the points ("+x1+ ","+y1+") ("+x2+","+y2+") is y = "+slope+ "x + "+intercept );
-        
-        }
-
-        
-
-        
-
+        System.out.println("the line equation for the points (" + x1 + "," + y1 + ") (" + x2 + "," + y2 + ") is y = "
+                + slope + "x + " + intercept);
 
     }
 
+}
