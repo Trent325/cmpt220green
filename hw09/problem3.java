@@ -1,3 +1,5 @@
+// JA: You should have a main method to call this.
+
 public class problem3 {
 
     public static class BinaryFormatException extends NumberFormatException {
